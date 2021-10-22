@@ -30,7 +30,9 @@ app.get("/getFile", (req, res) => {
   res.send(storage.sort());
 });
 app.get("/", (req, res) => {
-  res.send(`Use url/createFile to create file  and url/getFile to get file`);
+  res.send(`Use url/createFile to create file  
+            and
+            url/getFile to get file`);
 });
 
 // Run server
