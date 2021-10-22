@@ -29,6 +29,9 @@ app.get("/getFile", (req, res) => {
   let storage = fs.readdirSync("./Timefiles");
   res.send(storage.sort());
 });
+app.get("/", (req, res) => {
+  res.send(`Use url/createFile to create file  and url/getFile to get file`);
+});
 
 // Run server
 app.listen(port, () => {
