@@ -2,7 +2,7 @@ const express = require("express");
 require("dotenv").config();
 
 const app = express();
-const PORT = 3001 || process.env.PORT;
+const port = process.env.PORT || 3001;
 const fs = require("fs");
 
 //creating a folder to store all files
@@ -31,6 +31,6 @@ app.get("/getFile", (req, res) => {
 });
 
 // Run server
-app.listen(PORT, () => {
-  console.log(`server runnind at port ${PORT}`);
+app.listen(port, () => {
+  console.log(`server runnind at port ${port}`);
 });
