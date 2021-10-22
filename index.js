@@ -15,7 +15,7 @@ app.get("/createFile", (req, res, next) => {
   fileName = fileName.slice(0, 19).replace(/:/g, "-");
 
   let data = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} ${
-    date.getHours() >= 12 ? "pm" : "am"
+    date.getHours() >= 12 ? "PM" : "AM"
   }`;
 
   fs.writeFileSync(`./Timefiles/${fileName}.txt`, data, (err) => {
