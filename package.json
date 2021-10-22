@@ -1,9 +1,12 @@
 {
   "name": "nodejs-file-system",
   "version": "1.0.0",
-  "main": "node index.js",
+  "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
