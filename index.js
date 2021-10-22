@@ -31,6 +31,6 @@ app.get("/getFile", (req, res) => {
 });
 
 // Run server
-app.listen(process.env.PORT, () => {
+app.listen(PORT, () => {
   console.log(`server runnind at port ${PORT}`);
 });
